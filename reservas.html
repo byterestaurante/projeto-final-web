@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservas – Byte Restaurante</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">🍽️ Byte Restaurante</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="reservas.html" class="active">Reservas</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+
+        <div class="page-header">
+            <h1>Reservas</h1>
+            <p>Reserve sua mesa com antecedência</p>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="reserva-layout">
+
+                    <div class="reserva-form-wrap">
+                        <h2>Fazer Reserva</h2>
+                        <form id="reservaForm" class="form">
+
+                            <div class="form-group">
+                                <label>Nome completo *</label>
+                                <input type="text" id="r_nome" placeholder="Seu nome completo" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Telefone *</label>
+                                <input type="tel" id="r_telefone" placeholder="(91) 99999-0000" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label>E-mail *</label>
+                                <input type="email" id="r_email" placeholder="seuemail@exemplo.com" required />
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Data *</label>
+                                    <input type="date" id="r_data" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>Horário *</label>
+                                    <select id="r_horario" required>
+                                        <option value="" disabled selected>Selecione...</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Número de pessoas *</label>
+                                <select id="r_pessoas" required>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="1">1 pessoa</option>
+                                    <option value="2">2 pessoas</option>
+                                    <option value="3">3 pessoas</option>
+                                    <option value="4">4 pessoas</option>
+                                    <option value="5">5 pessoas</option>
+                                    <option value="6">6 pessoas</option>
+                                    <option value="7">7 pessoas</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Ocasião especial?</label>
+                                <select id="r_ocasiao">
+                                    <option value="">Nenhuma</option>
+                                    <option value="Aniversário">Aniversário 🎂</option>
+                                    <option value="Casamento">Casamento 💍</option>
+                                    <option value="Formatura">Formatura 🎓</option>
+                                    <option value="Corporativo">Jantar Corporativo 💼</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Observações</label>
+                                <textarea id="r_obs" rows="3" placeholder="Alergias, preferências de mesa, etc."></textarea>
+                            </div>
+
+                            <button type="submit" id="btnReserva" class="btn btn-primary btn-full">Confirmar Reserva 🍽️</button>
+                        </form>
+                        <div id="reservaMsg" class="msg" style="display:none;"></div>
+                    </div>
+
+                    <div class="reserva-info">
+                        <div class="info-box">
+                            <h3>📋 Política de Reserva</h3>
+                            <ul>
+                                <li>✅ Reservas com até <strong>30 minutos de antecedência</strong></li>
+                                <li>⏳ A mesa é mantida por <strong>15 minutos</strong></li>
+                                <li>❌ Cancelamentos: avisar <strong>com antecedência</strong></li>
+                                <li>👥 Grupos acima de 7: ligar diretamente</li>
+                            </ul>
+                        </div>
+                        <div class="info-box">
+                            <h3>🕐 Horário de Funcionamento</h3>
+                            <ul>
+                                <li>Todos os dias: 11h - 15h</li>
+                            </ul>
+                        </div>
+                        <div class="info-box">
+                            <h3>📍 Localização</h3>
+                            <p>Avenida Alcindo Cacela, 287<br>Umarizal – Belém/PA</p>
+                            <p style="margin-top:8px;">📞 (91) 91234-5678</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/main.js"></script>
+        <script src="js/reservas.js"></script>
+    </body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Delivery – Byte Restaurante</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="logo">🍽️ Byte Restaurante</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="delivery.html" class="active">Delivery</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+
+        <div class="page-header">
+            <h1>Delivery</h1>
+            <p>Peça agora e receba em casa</p>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="delivery-layout">
+                    <div class="delivery-menu">
+                        <div class="filtros">
+                            <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                            <button class="filtro-btn" data-categoria="entradas">Entradas</button>
+                            <button class="filtro-btn" data-categoria="pratos">Pratos Principais</button>
+                            <button class="filtro-btn" data-categoria="bebidas">Bebidas</button>
+                            <button class="filtro-btn" data-categoria="sobremesas">Sobremesas</button>
+                        </div>
+
+                        <div class="dl-section" data-cat="entradas">
+                            <h2 class="menu-category">🥗 Entradas</h2>
+                            <div class="dl-grid">
+
+                                <div class="dl-card" data-nome="Caldo de Tutano" data-preco="18.90">
+                                    <div class="dl-card-emoji">🍲</div>
+                                    <div class="dl-card-info">
+                                        <h4>Caldo de Tutano</h4>
+                                        <p>Caldo rico com tutano e ervas frescas</p>
+                                        <span class="price">R$ 18,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Caldo de Tutano">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Bruschetta da Casa" data-preco="22.90">
+                                    <div class="dl-card-emoji">🥖</div>
+                                    <div class="dl-card-info">
+                                        <h4>Bruschetta da Casa</h4>
+                                        <p>Pão italiano com tomate, manjericão e azeite</p>
+                                        <span class="price">R$ 22,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Bruschetta da Casa">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Salada Caesar" data-preco="26.90">
+                                    <div class="dl-card-emoji">🥗</div>
+                                    <div class="dl-card-info">
+                                        <h4>Salada Caesar</h4>
+                                        <p>Alface, croutons, parmesão e molho especial</p>
+                                        <span class="price">R$ 26,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Salada Caesar">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dl-section" data-cat="pratos">
+                            <h2 class="menu-category">🍽️ Pratos Principais</h2>
+                            <div class="dl-grid">
+
+                                <div class="dl-card" data-nome="Picanha Grelhada" data-preco="59.90">
+                                    <div class="dl-card-emoji">🍖</div>
+                                    <div class="dl-card-info">
+                                        <h4>Picanha Grelhada</h4>
+                                        <p>Com arroz, feijão, farofa e vinagrete</p>
+                                        <span class="price">R$ 59,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Picanha Grelhada">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Peixe ao Molho" data-preco="49.90">
+                                    <div class="dl-card-emoji">🐟</div>
+                                    <div class="dl-card-info">
+                                        <h4>Peixe ao Molho</h4>
+                                        <p>Filé de peixe com molho especial e arroz</p>
+                                        <span class="price">R$ 49,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Peixe ao Molho">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Frango à Parmegiana" data-preco="44.90">
+                                    <div class="dl-card-emoji">🍗</div>
+                                    <div class="dl-card-info">
+                                        <h4>Frango à Parmegiana</h4>
+                                        <p>Frango empanado com molho de tomate e queijo</p>
+                                        <span class="price">R$ 44,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Frango à Parmegiana">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Macarronada Especial" data-preco="38.90">
+                                    <div class="dl-card-emoji">🍝</div>
+                                    <div class="dl-card-info">
+                                        <h4>Macarronada Especial</h4>
+                                        <p>Massa artesanal com bolonhesa e parmesão</p>
+                                        <span class="price">R$ 38,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Macarronada Especial">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Moqueca de Camarão" data-preco="69.90">
+                                    <div class="dl-card-emoji">🦐</div>
+                                    <div class="dl-card-info">
+                                        <h4>Moqueca de Camarão</h4>
+                                        <p>Camarão fresco com leite de coco e azeite de dendê</p>
+                                        <span class="price">R$ 69,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Moqueca de Camarão">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Filé de Frango Grelhado" data-preco="42.90">
+                                    <div class="dl-card-emoji">🥩</div>
+                                    <div class="dl-card-info">
+                                        <h4>Filé de Frango Grelhado</h4>
+                                        <p>Com legumes salteados e purê de batata</p>
+                                        <span class="price">R$ 42,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Filé de Frango Grelhado">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dl-section" data-cat="bebidas">
+                            <h2 class="menu-category">🥤 Bebidas</h2>
+                            <div class="dl-grid">
+                                <div class="dl-card" data-nome="Suco Natural" data-preco="12.90">
+                                    <div class="dl-card-emoji">🥤</div>
+                                    <div class="dl-card-info">
+                                        <h4>Suco Natural</h4>
+                                        <p>Açaí, manga, maracujá ou goiaba</p>
+                                        <span class="price">R$ 12,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Suco Natural">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Refrigerante" data-preco="8.00">
+                                    <div class="dl-card-emoji">🧃</div>
+                                    <div class="dl-card-info">
+                                        <h4>Refrigerante</h4>
+                                        <p>Coca-Cola, Guaraná ou Soda</p>
+                                        <span class="price">R$ 8,00</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Refrigerante">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Água Mineral" data-preco="5.00">
+                                    <div class="dl-card-emoji">💧</div>
+                                    <div class="dl-card-info">
+                                        <h4>Água Mineral</h4>
+                                        <p>Com ou sem gás – 500ml</p>
+                                        <span class="price">R$ 5,00</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Água Mineral">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Caipirinha" data-preco="19.90">
+                                    <div class="dl-card-emoji">🍹</div>
+                                    <div class="dl-card-info">
+                                        <h4>Caipirinha</h4>
+                                        <p>Limão, maracujá ou morango</p>
+                                        <span class="price">R$ 19,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Caipirinha">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dl-section" data-cat="sobremesas">
+                            <h2 class="menu-category">🍮 Sobremesas</h2>
+                            <div class="dl-grid">
+
+                                <div class="dl-card" data-nome="Pudim de Leite" data-preco="16.90">
+                                    <div class="dl-card-emoji">🍮</div>
+                                    <div class="dl-card-info">
+                                        <h4>Pudim de Leite</h4>
+                                        <p>Receita tradicional com calda de caramelo</p>
+                                        <span class="price">R$ 16,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Pudim de Leite">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Mousse de Chocolate" data-preco="18.90">
+                                    <div class="dl-card-emoji">🍫</div>
+                                    <div class="dl-card-info">
+                                        <h4>Mousse de Chocolate</h4>
+                                        <p>Cremoso e com raspas de chocolate</p>
+                                        <span class="price">R$ 18,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Mousse de Chocolate">+</button>
+                                </div>
+
+                                <div class="dl-card" data-nome="Sorvete Artesanal" data-preco="14.90">
+                                    <div class="dl-card-emoji">🍨</div>
+                                    <div class="dl-card-info">
+                                        <h4>Sorvete Artesanal</h4>
+                                        <p>Sabores: creme, açaí ou cupuaçu</p>
+                                        <span class="price">R$ 14,90</span>
+                                    </div>
+                                    <button class="dl-add-btn" aria-label="Adicionar Sorvete Artesanal">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sacola-wrap">
+                        <div class="sacola" id="sacola">
+
+                            <div class="sacola-header">
+                                <span class="sacola-icone">🛵</span>
+                                <h2>Sua Sacola</h2>
+                                <span class="sacola-qtd-badge" id="sacolaBadge">0</span>
+                            </div>
+
+                            <div class="sacola-vazia" id="sacolaVazia">
+                                <span class="sacola-vazia-emoji">🛒</span>
+                                <p>Sua sacola está vazia.</p>
+                                <small>Adicione itens do cardápio ao lado.</small>
+                            </div>
+
+                            <ul class="sacola-itens" id="sacolaItens"></ul>
+
+                            <div class="sacola-resumo" id="sacolaResumo" style="display:none;">
+                                <div class="sacola-linha">
+                                    <span>Subtotal</span>
+                                    <span id="sacolaSubtotal">R$ 0,00</span>
+                                </div>
+                                <div class="sacola-linha">
+                                    <span>Taxa de entrega</span>
+                                    <span class="sacola-taxa">R$ 5,00</span>
+                                </div>
+                                <div class="sacola-linha sacola-total">
+                                    <span>Total</span>
+                                    <span id="sacolaTotal">R$ 5,00</span>
+                                </div>
+                            </div>
+
+                            <form class="sacola-form" id="sacolaForm" style="display:none;">
+                                <div class="form-group">
+                                    <label>Nome completo *</label>
+                                    <input type="text" id="d_nome" placeholder="Seu nome" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefone *</label>
+                                    <input type="tel" id="d_telefone" placeholder="(91) 99999-0000" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>E-mail *</label>
+                                    <input type="email" id="d_email" placeholder="seu@email.com" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>Endereço de entrega *</label>
+                                    <input type="text" id="d_endereco" placeholder="Rua, número, bairro" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>Complemento</label>
+                                    <input type="text" id="d_complemento" placeholder="Apto, bloco, referência" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Forma de pagamento</label>
+                                    <div class="pix-badge">
+                                        <span class="pix-badge-icon">❖</span>
+                                        <span class="pix-badge-text">PIX</span>
+                                        <span class="pix-badge-tag">Aprovação Imediata</span>
+                                    </div>
+                                    <input type="hidden" id="d_pagamento" value="Pix" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Observações</label>
+                                    <textarea id="d_obs" rows="2" placeholder="Sem cebola, ponto da carne..."></textarea>
+                                </div>
+                                <button type="submit" id="btnFinalizar" class="btn btn-primary btn-full">Finalizar Pedido 🛵</button>
+                            </form>
+
+                            <div id="deliveryMsg" class="msg" style="display:none;"></div>
+
+                            <div class="sacola-info-rapida">
+                                <span>⏱️ 40–60 min</span>
+                                <span>🛵 Entrega R$ 5,00</span>
+                                <span>🛒 Mínimo R$ 30,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="revisaoModalOverlay" class="pix-modal-overlay" style="display:none;">
+            <div class="pix-modal-card revisao-modal-card">
+                <div class="pix-modal-header">
+                    <div class="pix-modal-title-row">
+                        <span class="pix-modal-icon">📋</span>
+                        <h2 class="pix-modal-title">Revisão do Pedido</h2>
+                    </div>
+                    <button class="pix-modal-close" id="revisaoModalClose" aria-label="Fechar">✕</button>
+                </div>
+
+                <div class="revisao-modal-body">
+                    <div class="revisao-secao">
+                        <h3 class="revisao-secao-titulo">📦 Itens do Pedido</h3>
+                        <ul id="revisaoItens" class="revisao-itens-lista"></ul>
+                        <div class="revisao-valores">
+                            <div class="revisao-linha">
+                                <span>Subtotal</span>
+                                <span id="revisaoSubtotal">R$ 0,00</span>
+                            </div>
+                            <div class="revisao-linha">
+                                <span>Taxa de entrega</span>
+                                <span>R$ 5,00</span>
+                            </div>
+                            <div class="revisao-linha revisao-total">
+                                <span>Total</span>
+                                <span id="revisaoTotal">R$ 0,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="revisao-secao">
+                        <h3 class="revisao-secao-titulo">👤 Dados do Cliente</h3>
+                        <div class="revisao-dados-grid">
+                            <div class="revisao-dado">
+                                <span class="revisao-dado-label">Nome</span>
+                                <span class="revisao-dado-valor" id="revisaoNome">—</span>
+                            </div>
+                            <div class="revisao-dado">
+                                <span class="revisao-dado-label">Telefone</span>
+                                <span class="revisao-dado-valor" id="revisaoTelefone">—</span>
+                            </div>
+                            <div class="revisao-dado">
+                                <span class="revisao-dado-label">E-mail</span>
+                                <span class="revisao-dado-valor" id="revisaoEmail">—</span>
+                            </div>
+                            <div class="revisao-dado revisao-dado-full">
+                                <span class="revisao-dado-label">Endereço</span>
+                                <span class="revisao-dado-valor" id="revisaoEndereco">—</span>
+                            </div>
+                            <div class="revisao-dado revisao-dado-full" id="revisaoComplementoWrap" style="display:none;">
+                                <span class="revisao-dado-label">Complemento</span>
+                                <span class="revisao-dado-valor" id="revisaoComplemento">—</span>
+                            </div>
+                            <div class="revisao-dado revisao-dado-full" id="revisaoObsWrap" style="display:none;">
+                                <span class="revisao-dado-label">Observações</span>
+                                <span class="revisao-dado-valor" id="revisaoObs">—</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revisao-modal-footer">
+                    <button class="btn-revisao-editar" id="btnRevisaoEditar">✏️ Editar Pedido</button>
+                    <button class="btn-revisao-pagar" id="btnRevisaoPagar">💳 Prosseguir para Pagamento</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="pixModalOverlay" class="pix-modal-overlay" style="display:none;">
+            <div class="pix-modal-card">
+                <div class="pix-modal-header">
+                    <div class="pix-modal-title-row">
+                        <span class="pix-modal-icon">❖</span>
+                        <h2 class="pix-modal-title">Pague com PIX</h2>
+                        <span class="pix-aprovacao-tag">Aprovação Imediata</span>
+                    </div>
+                    <button class="pix-modal-close" id="pixModalClose" aria-label="Fechar">✕</button>
+                </div>
+
+                <div class="pix-modal-body">
+                    <div class="pix-qr-area">
+                        <div id="pixQrCode" class="pix-qr-box"></div>
+                    </div>
+                    <div class="pix-instrucoes">
+                        <p class="pix-instrucoes-titulo"><strong>Pagar com Pix é simples, veja como:</strong></p>
+                        <ol class="pix-steps">
+                            <li>Abra o app do seu banco e encontre a opção de pagamento Pix</li>
+                            <li>Selecione a função Escanear QR code ou Pix copia e cola</li>
+                            <li>Verifique os detalhes e finalize o pagamento, confira o status na página de pagamentos.</li>
+                        </ol>
+                        <p class="pix-expira">⚠️ Atenção: seu código expira em breve!</p>
+                    </div>
+                </div>
+
+                <div class="pix-modal-footer">
+                    <div class="pix-chave-row">
+                        <span class="pix-chave-label">Chave PIX:</span>
+                        <span class="pix-chave-valor" id="pixChaveValor">/span>
+                    </div>
+                    <button class="btn-copiar-pix" id="btnCopiarPix">
+                        <span>📋</span> Copiar código
+                    </button>
+                </div>
+
+                <div class="pix-total-row">
+                    <span>Total a pagar:</span>
+                    <strong id="pixTotalValor">R$ 0,00</strong>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+        <script src="js/delivery.js"></script>
+    </body>
+</html>
